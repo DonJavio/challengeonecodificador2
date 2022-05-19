@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Oleo+Script&display=swap');
+    </style>
+    <title>Challenge One - 1</title>
+    <link rel="icon" href="favicon.ico" type="image/ico">
+
+</head>
+
+<body>
+    <canvas width="1366" height="70" id=canvas></canvas>
+
+    <main class="cajaPrincipal">
+    <h1>Mensajes Secretos En Alura</h1><br>
+    <h3>En ésta página podrá cifrar mensajes para que sus enemigos no arruinen sus planes.</h3>
+    
+    <div class="cajas">
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" spellcheck=false placeholder="Escriba aquí solo letras minusculas y sin tildes"></textarea>
+        <textarea name="resultado" id="resultado" cols="30" rows="10" spellcheck=false placeholder="*" readonly></textarea>
+    </div>
+        
+        <div class="botones">
+            <button type="button" class="cifrar">Cifrar</button>
+            <button type="button" class="decifrar">Decifrar</button>
+            <button type="button" class="copiar" onclick="copiar">Copiar</button>
+            <button type="button" class="pegar" onclick="pegar">Pegar</button>
+        </div>
+    </main>
+    <footer>
+        <h2>Fabricio Bruno Perelli Cinat - Derechos Reservados &copy; </h2>
+    </footer>
+        <script src="funciones.js"></script>
+</body>
+</html>
